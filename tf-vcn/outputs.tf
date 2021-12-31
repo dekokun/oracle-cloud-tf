@@ -34,3 +34,12 @@ output "public-security-list-name" {
 output "public-security-list-OCID" {
   value = oci_core_security_list.public-security-list.id
 }
+
+# Outputs for private subnet
+
+output "private-subnet-name" {
+  value = oci_core_subnet.vcn-private-subnet.display_name
+}
+output "private-subnet-OCID" {
+  value = oci_core_subnet.vcn-private-subnet.id
+}
