@@ -22,7 +22,7 @@ resource "oci_containerengine_node_pool" "oke-node-pool" {
   # Using image Oracle-Linux-7.x-<date>
   # Find image OCID for your region
   node_source_details {
-    image_id    = "ocid1.image.oc1.ap-tokyo-1.aaaaaaaagd3zctfwforxacbrswifnszi4kyjjc3mh4haqg7hio7jvexsjiea"
+    image_id    = "ocid1.image.oc1.ap-tokyo-1.aaaaaaaaso3y5w5wjhcwjsjkdzytz33tohah6tb7jz53bqknb6lrpkxo2kpa"
     source_type = "image"
   }
 
