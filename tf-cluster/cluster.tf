@@ -6,6 +6,12 @@ resource "oci_containerengine_cluster" "oke-cluster" {
   kubernetes_version = "v1.21.5"
   name               = "crypt-cluster"
   vcn_id             = module.vcn.vcn_id
+  endpoint_config {
+
+    #Optional
+    is_public_ip_enabled = true
+    subnet_id            = oci_core_subnet.vcn-public-subnet.id
+  }
 
   # Optional
   options {
