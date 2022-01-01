@@ -17,6 +17,7 @@ resource "oci_core_security_list" "public-security-list"{
     }
 
     ingress_security_rules {
+        display_name = "k8s api"
         stateless = false
         source = "0.0.0.0/0"
         source_type = "CIDR_BLOCK"
