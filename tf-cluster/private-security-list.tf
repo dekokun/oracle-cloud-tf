@@ -7,7 +7,7 @@ resource "oci_core_security_list" "private-security-list"{
     vcn_id = module.vcn.vcn_id
 
     # Optional
-    display_name = "bitcoin-private-subnet"
+    display_name = "crypt-private-subnet"
 
     egress_security_rules {
         stateless = false

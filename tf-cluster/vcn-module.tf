@@ -7,8 +7,8 @@ module "vcn" {
   # Required
   compartment_id = oci_identity_compartment.tf-compartment.id
   region = "ap-tokyo-1"
-  vcn_name = "bitcoin"
-  vcn_dns_label = "bitcoin"
+  vcn_name = "crypt"
+  vcn_dns_label = "crypt"
 
   # Optional
   create_internet_gateway = true
