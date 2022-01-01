@@ -11,7 +11,7 @@ resource "oci_containerengine_node_pool" "oke-node-pool" {
       availability_domain = data.oci_identity_availability_domains.ads.availability_domains[0].name
       subnet_id           = oci_core_subnet.vcn-private-subnet.id
     }
-    size = 1
+    size = 3
   }
   node_shape = "VM.Standard.A1.Flex"
   node_shape_config {
